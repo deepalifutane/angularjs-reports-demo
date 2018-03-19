@@ -1,0 +1,320 @@
+{
+    "1":
+    {
+        "components":
+        {
+            "reportName": "Assigned Features and Bundles Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "accountNumber": "Account Number",
+                "phoneNumber": "Phone number",
+                "location": "Location"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "accountNumber": "Account Num 1",
+                "phoneNumber": "45821452",
+                "location": "UK"
+            },
+            {
+                "rowId": 2,
+                "accountNumber": "Account Num 2",
+                "phoneNumber": "45821452",
+                "location": "US"
+            },
+            {
+                "rowId": 3,
+                "accountNumber": "Account Num 3",
+                "phoneNumber": "45821442",
+                "location": "US"
+            }
+        ]
+    },
+    "2":
+    {
+        "components":
+        {
+            "reportName": " Device Assignment Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "extensionNum": "Extension Number",
+                "phoneNumber": "Phone number",
+                "location": "Location",
+                "username": "Username",
+                "privacy": "Privacy"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "extensionNum": "145875",
+                "phoneNumber": "45821452",
+                "location": "UK",
+                "username": "admin",
+                "privacy": "yes"
+            },
+            {
+                "rowId": 2,
+                "extensionNum": "458521",
+                "phoneNumber": "45821452",
+                "location": "US",
+                "username": "root",
+                "privacy": "yes"
+            }
+        ]
+    },
+    "3":
+    {
+        "components":
+        {
+            "reportName": " Device Summary Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "deviceName": "Device name",
+                "deviceType": "Device Type",
+                "location": "Location",
+                "deviceVersion": "Device Version",
+                "macAddress": "Device MAC Address"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "deviceName": "Modem 1",
+                "deviceType": "45821452",
+                "location": "UK",
+                "deviceVersion": "1.0.1",
+                "macAddress": "10.20.12.344.5"
+            },
+            {
+                "rowId": 1,
+                "deviceName": "Modem 2",
+                "deviceType": "45821452",
+                "location": "US",
+                "deviceVersion": "2.0.1",
+                "macAddress": "10.20.12.344.5"
+            }
+        ]
+    },
+    "4":
+    {
+        "components":
+        {
+            "reportName": " Emergency Call Log Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "deviceName": "Device name",
+                "deviceType": "Device Type",
+                "location": "Location",
+                "deviceVersion": "Device Version",
+                "macAddress": "Device MAC Address",
+                "duration": "Call Duration"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "deviceName": "Modem 1",
+                "deviceType": "45821452",
+                "location": "UK",
+                "deviceVersion": "1.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:00:10"
+            },
+            {
+                "rowId": 1,
+                "deviceName": "Modem 2",
+                "deviceType": "45821452",
+                "location": "US",
+                "deviceVersion": "2.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:02:10"
+            }
+        ]
+    },
+    "5":
+    {
+        "components":
+        {
+            "reportName": "Features and Bundles Summary Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "deviceName": "Device name",
+                "deviceType": "Device Type",
+                "location": "Location",
+                "deviceVersion": "Device Version",
+                "macAddress": "Device MAC Address",
+                "duration": "Call Duration",
+                "inUse": "In Use"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "deviceName": "Modem 1",
+                "deviceType": "45821452",
+                "location": "UK",
+                "deviceVersion": "1.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:00:10",
+                "inUse": 10
+            },
+            {
+                "rowId": 1,
+                "deviceName": "Modem 2",
+                "deviceType": "45821452",
+                "location": "US",
+                "deviceVersion": "2.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:02:10",
+                "inUse": 2
+            }
+        ]
+    },
+    "6":
+    {
+        "components":
+        {
+            "reportName": "Flexible Seating Host Report",
+            "reportHeaders":
+            {
+                "rowId": "Row ID",
+                "deviceName": "Device name",
+                "deviceType": "Device Type",
+                "location": "Location",
+                "deviceVersion": "Device Version",
+                "macAddress": "Device MAC Address",
+                "duration": "Call Duration",
+                "inUse": "In Use",
+                "hostName": "Host name"
+            }
+        },
+        "data": [
+
+            {
+                "rowId": 1,
+                "deviceName": "Modem 1",
+                "deviceType": "45821452",
+                "location": "UK",
+                "deviceVersion": "1.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:00:10",
+                "inUse": 10,
+                "hostName": "amdocs.com"
+            },
+            {
+                "rowId": 1,
+                "deviceName": "Modem 2",
+                "deviceType": "45821452",
+                "location": "US",
+                "deviceVersion": "2.0.1",
+                "macAddress": "10.20.12.344.5",
+                "duration": "00:02:10",
+                "inUse": 2,
+                "hostName": "att.com"
+            }
+        ]
+    },
+    "1000":
+    {
+        "components":
+        {
+            "reportName": "Reports",
+            "columnHeaders": [
+                "#",
+                "Report Name",
+                "Report Description",
+                "Report Tags",
+                "Actions"
+
+            ],
+            "sort": [
+            {
+                "sortValue": "reportName",
+                "sortName": "Report Name"
+            },
+            {
+                "sortValue": "reportTags",
+                "sortName": "Report Tags"
+            }]
+        },
+        "data": [
+        {
+            "id": 1,
+            "reportName": "Assigned Features and Bundles Report",
+            "reportTags": "Inventory, Feature",
+            "reportDescription": "Lists the features and bundles that are assigned to each user",
+            "actions": [
+            {
+                "delete": "Delete"
+            },
+            {
+                "favorite": "Favorite"
+            }]
+        },
+        {
+            "id": 2,
+            "reportName": "Device Assignment Report",
+            "reportTags": "Inventory, Device",
+            "reportDescription": "Provides details about the user that's assigned to each device",
+            "actions": [
+            {
+                "delete": "Delete"
+            },
+            {
+                "favorite": "Favorite"
+            }]
+        },
+        {
+            "id": 3,
+            "reportName": "Device Summary Report",
+            "reportDescription": "Lists the devices that are in your company inventory",
+            "reportTags": "Inventory, Device",
+            "actions": [
+            {
+                "delete": "Delete"
+            },
+            {
+                "favorite": "Favorite"
+            }]
+        },
+        {
+            "id": 4,
+            "reportName": "Emergency Call Log Report",
+            "reportTags": "Usage",
+            "reportDescription": "Lists the emergency calls that are made by users",
+            "actions": [
+            {
+                "delete": "Delete"
+            },
+            {
+                "favorite": "Favorite"
+            }]
+        },
+        {
+            "id": 5,
+            "reportName": "Features and Bundles Summary Report",
+            "reportDescription": "Summarizes how many users are assigned a particular feature and bundle",
+            "reportTags": "Inventory, Feature",
+            "actions": [
+            {
+                "delete": "Delete"
+            },
+            {
+                "favorite": "Favorite"
+            }]
+        }]
+    }
+}

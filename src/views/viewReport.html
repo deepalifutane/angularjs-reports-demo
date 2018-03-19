@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>
+            {{vm.reportComponents.reportName}}
+          </h1>
+            <h2>
+            {{CMS.report}}
+          </h2>
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+    <br>
+    <br>
+    <div class="alert alert-danger" role="alert" ng-if="vm.showError==true">
+        {{vm.globalValues.globalErrorMsg}}
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" ng-repeat="(key, value) in vm.reportComponents.reportHeaders">{{value}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in vm.reportData | filter:searchKeyword">
+                <td scope="row" ng-repeat="(colKey, colValue) in vm.reportComponents.reportHeaders">
+                    <span>{{row[colKey]}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

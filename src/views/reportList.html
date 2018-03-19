@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>
+            {{vm.reportComponents.reportName}}
+          </h1>
+            <h2>
+            {{CMS.report}}
+          </h2>
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-6">
+            <label for="searchInput">{{vm.globalValues.searchLabel}}</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for..." ng-model="searchKeyword" id="searchInput">
+                <span class="input-group-btn">
+              <button class="btn btn-default" type="button">{{vm.globalValues.searchButtonLabel}}</button>
+            </span>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-4">
+            <label for="sortBySelect">{{vm.globalValues.sortByLabel}}</label>
+            <select class="form-control" ng-change="sortTableData();" ng-model='vm.sortBy' id="sortBySelect">
+                <option ng-repeat="(index,sortOption) in vm.reportComponents.sort" value="{{sortOption.sortValue}}">
+                    {{sortOption.sortName}}
+                </option>
+            </select>
+        </div>
+        <div class="col-lg-2">
+            <label for="sortOrder">{{vm.globalValues.sortOrderLabel}}</label>
+            <br>
+            <button type="button" class="btn btn-light" id="sortOrder" ng-click="vm.toggleSortOrder();">
+                <span>{{vm.orderText}}</span>
+            </button>
+        </div>
+    </div>
+    <!-- /.row -->
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" ng-repeat="header in vm.reportComponents.columnHeaders">{{header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in filteredData = (vm.reportData | filter:searchKeyword)">
+                <th scope="row">{{row.id}}</th>
+                <td>{{row.reportName}}</td>
+                <td>{{row.reportDescription}}</td>
+                <td>{{row.reportTags}}</td>
+                <td>
+                    <a href="javascript:void(0);" ng-click="vm.reportActions(row.id);">{{vm.globalValues.viewReportLabel}}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="alert alert-secondary" role="alert" ng-if="filteredData.length==0">
+        <b>{{vm.globalValues.noResultHeader}}</b>
+        <br> {{vm.globalValues.noResultErrorMsg}}
+    </div>
+    <div class="alert alert-danger" role="alert" ng-if="vm.showError==true">
+        {{vm.globalValues.globalErrorMsg}}
+    </div>
+</div>

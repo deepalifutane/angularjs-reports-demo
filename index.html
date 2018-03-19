@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Advanced Tech Unit</title>
+    <link rel="shortcut icon" href="public/img/favicon.png" />
+
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.0.0/jasmine.min.js"></script>
+    <!-- <<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.0.0/jasmine-html.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.0.0/boot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-mocks/1.6.9/angular-mocks.min.js"></script>
+
+    <script src="./src/app.js"></script>
+    <script src="./src/scripts/values/reportingValues.js"></script>
+    <script src="./src/scripts/controllers/reportListCtrl.js"></script>
+    <script src="./src/scripts/controllers/viewReportCtrl.js"></script>
+    <script src="./src/scripts/services/reportFactory.js"></script>
+    <script src="./src/scripts/values/reportingValues.js"></script>
+</head>
+
+<body>
+    <div ng-app="atuApp">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#/list">Collaborate Reporting</a>
+        </nav>
+        <div class="container" ng-view="">
+
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
